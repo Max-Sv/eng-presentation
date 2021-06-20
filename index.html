@@ -1,40 +1,412 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-		<title>reveal.js</title>
+    <title>reveal.js</title>
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/black.css" />
+    <link rel="stylesheet" href="./css/styles.scss" />
+    <link rel="stylesheet" href="./style.css" />
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
-			</div>
-		</div>
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section
+          data-background-video="./media/netflix.mp4"
+          data-background-interactive
+        ></section>
+        <!-- <section>Slide 2</section> -->
+        <!-- <section data-markdown>
+          <textarea data-template>
+            ## History
+            Netflix, in full Netflix, Inc., media-streaming and video-rental company founded in 1997 by American entrepreneurs Reed Hastings and Marc Randolph. It is also involved in the creation of original programming. Corporate headquarters are in Los Gatos, California.
+          </textarea>
+        </section> -->
+        <section data-auto-animate>
+          <h1>History</h1>
+        </section>
+        <section data-auto-animate data-visibility="uncounted">
+          <h1>History</h1>
+          <p>
+            Netflix, in full Netflix, Inc., media-streaming and video-rental
+            company founded in 1997 by American entrepreneurs Reed Hastings and
+            Marc Randolph. It is also involved in the creation of original
+            programming. Corporate headquarters are in Los Gatos, California.
+          </p>
+        </section>
+        <section data-auto-animate>
+          <div class="line">
+            <div class="load l1"></div>
+          </div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
-			// More info about initialization & config:
-			// - https://revealjs.com/initialization/
-			// - https://revealjs.com/config/
-			Reveal.initialize({
-				hash: true,
+          <div class="date">
+            <p class="date-text">
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by
+              mail. They tested the concept by mailing themselves a DVD. The DVD
+              arrived intact, and the idea for Netflix was born.
+            </p>
+            <pre class="date-img" data-id="code-animation">
+              <img class="fragment" src="https://placekitten.com/450/300" width="450" height="300">
+            </pre>
+          </div>
+        </section>
+        <section data-auto-animate data-visibility="uncounted">
+          <div class="line">
+            <div class="load l2"></div>
+          </div>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+              1998 Netflix.com, the first DVD rental and sales site, is launched.
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate data-visibility="uncounted">
+          <div class="line">
+            <div class="load l3"></div>
+          </div>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+              1998 Netflix.com, the first DVD rental and sales site, is launched.
+              1999 The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate data-visibility="uncounted">
+          <div class="line">
+            <div class="load l4"></div>
+          </div>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+              1998 Netflix.com, the first DVD rental and sales site, is launched.
+              1999 The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate data-visibility="uncounted">
+          <div class="line">
+            <div class="load l5"></div>
+          </div>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+              Netflix.com, the first DVD rental and sales site, is launched.
+              The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              !!!!
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
 
-				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
-			});
-		</script>
-	</body>
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006 Membership grows to 5 million.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              2012Membership reaches 25 million members, and expands into the United Kingdom, Ireland and the Nordic Countries. Netflix ventures into stand-up specials with 'Bill Burr: You People Are All the Same.'
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              2012Membership reaches 25 million members, and expands into the United Kingdom, Ireland and the Nordic Countries. Netflix ventures into stand-up specials with 'Bill Burr: You People Are All the Same.'
+              2013'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              2012Membership reaches 25 million members, and expands into the United Kingdom, Ireland and the Nordic Countries. Netflix ventures into stand-up specials with 'Bill Burr: You People Are All the Same.'
+              2013'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.
+              2014Membership surpasses 50 million and extends to Austria, Belgium, France, Germany, Luxembourg and Switzerland. Netflix begins streaming in 4K Ultra HD.
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              2012Membership reaches 25 million members, and expands into the United Kingdom, Ireland and the Nordic Countries. Netflix ventures into stand-up specials with 'Bill Burr: You People Are All the Same.'
+              2013'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.
+              2014Membership surpasses 50 million and extends to Austria, Belgium, France, Germany, Luxembourg and Switzerland. Netflix begins streaming in 4K Ultra HD.
+              2016Netflix expands to 130 new countries, bringing the service to members in more than 190 countries and 21 languages around the world. The Download feature is added for offline and on-the-go viewing.
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              2012Membership reaches 25 million members, and expands into the United Kingdom, Ireland and the Nordic Countries. Netflix ventures into stand-up specials with 'Bill Burr: You People Are All the Same.'
+              2013'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.
+              2014Membership surpasses 50 million and extends to Austria, Belgium, France, Germany, Luxembourg and Switzerland. Netflix begins streaming in 4K Ultra HD.
+              2016Netflix expands to 130 new countries, bringing the service to members in more than 190 countries and 21 languages around the world. The Download feature is added for offline and on-the-go viewing.
+              2017 Membership hits 100 million members globally. Netflix wins its first Academy Award, for 'The White Helmets.' The introduction of interactive storytelling and the Skip Intro button gives members more choices to tailor their viewing experience.
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              2012Membership reaches 25 million members, and expands into the United Kingdom, Ireland and the Nordic Countries. Netflix ventures into stand-up specials with 'Bill Burr: You People Are All the Same.'
+              2013'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.
+              2014Membership surpasses 50 million and extends to Austria, Belgium, France, Germany, Luxembourg and Switzerland. Netflix begins streaming in 4K Ultra HD.
+              2016Netflix expands to 130 new countries, bringing the service to members in more than 190 countries and 21 languages around the world. The Download feature is added for offline and on-the-go viewing.
+              2017 Membership hits 100 million members globally. Netflix wins its first Academy Award, for 'The White Helmets.' The introduction of interactive storytelling and the Skip Intro button gives members more choices to tailor their viewing experience.
+              2020Top 10 lists debut, allowing members to see what’s popular for the first time. Netflix is the most-nominated studio at the Academy Awards and Emmys. The Hardship Fund launches to aid creative community workers impacted by COVID-19, and two percent of our cash holdings move to financial institutions supporting Black communities.
+            </p>
+          </pre>
+        </section>
+        <section data-auto-animate>
+          <pre data-id="code-animation">
+            <p data-trim data-line-numbers>
+              1997 Reed Hastings and Marc Randolph had an idea to rent DVDs by mail. They tested the concept by mailing themselves a DVD. The DVD arrived intact, and the idea for Netflix was born.
+
+              1998Netflix.com, the first DVD rental and sales site, is launched.
+              1999The Netflix subscription service debuts, offering members unlimited DVD rentals without due dates, late fees, or monthly rental limits.
+              2000A personalized movie recommendation system is introduced, using members’ ratings on past titles to accurately predict future choices.
+              2002Netflix makes its initial public offering (IPO), at a selling price of $1 a share under the NASDAQ ticker NFLX.
+              2003Netflix is issued a patent by the U.S. Patent & Trademark Office to cover its subscription rental services as membership surpasses 1 million.
+              2005The Profiles feature launches, allowing members to create different lists for different users and/or different moods.
+              2006Membership grows to 5 million.
+              2007Streaming is introduced, allowing members to instantly watch series and films.
+              2008Netflix partners with consumer electronics brands to allow streaming on Xbox 360, Blu-ray players and TV set-top boxes.
+              2009After nearly three years and 40,000 submissions, the $1 million Netflix Prize is awarded to the team Bellkor's Pragmatic Chaos for improving the accuracy of recommendations by 10%. Streaming partnerships expand to internet connected TVs as membership surpasses 10 million. The Netflix Culture Deck is published.
+              2010Netflix arrives in Canada and streaming launches on mobile devices. The first dedicated kids experience debuts on streaming.
+              2011Netflix launches in Latin America and the Caribbean. The first Netflix button appears on remote controls.
+              2012Membership reaches 25 million members, and expands into the United Kingdom, Ireland and the Nordic Countries. Netflix ventures into stand-up specials with 'Bill Burr: You People Are All the Same.'
+              2013'House of Cards,' 'Hemlock Grove,' 'Arrested Development' and 'Orange Is the New Black' usher in the first slate of original series programming. 'House of Cards' goes on to win three Primetime Emmy awards - the first for an internet streaming service. The Profiles and My List features debut on streaming.
+              2014Membership surpasses 50 million and extends to Austria, Belgium, France, Germany, Luxembourg and Switzerland. Netflix begins streaming in 4K Ultra HD.
+              2016Netflix expands to 130 new countries, bringing the service to members in more than 190 countries and 21 languages around the world. The Download feature is added for offline and on-the-go viewing.
+              2017 Membership hits 100 million members globally. Netflix wins its first Academy Award, for 'The White Helmets.' The introduction of interactive storytelling and the Skip Intro button gives members more choices to tailor their viewing experience.
+              2020Top 10 lists debut, allowing members to see what’s popular for the first time. Netflix is the most-nominated studio at the Academy Awards and Emmys. The Hardship Fund launches to aid creative community workers impacted by COVID-19, and two percent of our cash holdings move to financial institutions supporting Black communities.
+              2021Membership surpasses 200 million. Netflix releases its first-ever film and series diversity study, in conjunction with the USC Annenberg Inclusion Initiative, and announces plans to reach net zero greenhouse gas emissions by the end of 2022.
+            </p>
+          </pre>
+        </section>
+      </div>
+    </div>
+
+    <script src="dist/reveal.js"></script>
+    <script src="plugin/notes/notes.js"></script>
+    <script src="plugin/markdown/markdown.js"></script>
+    <script src="plugin/highlight/highlight.js"></script>
+    <script>
+      // More info about initialization & config:
+      // - https://revealjs.com/initialization/
+      // - https://revealjs.com/config/
+      Reveal.initialize({
+        hash: true,
+        slideNumber: "c/t",
+        // Learn about plugins: https://revealjs.com/plugins/
+        plugins: [RevealMarkdown, RevealHighlight, RevealNotes],
+      }).then(() => {
+        this.next();
+        console.log("111:", 111);
+      });
+      setTimeout(() => {
+        Reveal.next();
+      }, 9000);
+    </script>
+  </body>
 </html>
